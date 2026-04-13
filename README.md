@@ -36,3 +36,5 @@ A simple and practical Asset Management & Compliance tool built using **React** 
 - **State Management:** Managed data using `useState` and `useEffect`.
 - **Responsive UI:** Designed using Tailwind utility classes for different screen sizes.
 - **CSV Export Logic:** Implemented file download using JavaScript (Blob API).
+
+---
