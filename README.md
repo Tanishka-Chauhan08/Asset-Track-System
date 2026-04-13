@@ -1,4 +1,4 @@
-# Asset Auditor Pro | Asset Tracker System
+# Asset Auditor Pro | IT Asset Management System
 
 A simple and practical Asset Management & Compliance tool built using **React** and **Tailwind CSS**. It helps track hardware and software assets, check their compliance status, and manage records in an organized way.
 
