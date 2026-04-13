@@ -4,6 +4,11 @@ A simple and practical Asset Management & Compliance tool built using **React** 
 
 ---
 
+## 🌐 Live Demo
+[View Live Dashboard](https://asset-track-system.netlify.app/)
+
+---
+
 ## 🚀 Key Features
 
 - **Asset Management:** Easily add, view, and remove assets with instant UI updates using React state.
@@ -31,6 +36,3 @@ A simple and practical Asset Management & Compliance tool built using **React** 
 - **State Management:** Managed data using `useState` and `useEffect`.
 - **Responsive UI:** Designed using Tailwind utility classes for different screen sizes.
 - **CSV Export Logic:** Implemented file download using JavaScript (Blob API).
-
-## 🌐 Live Demo
-[View Live Dashboard](https://asset-track-system.netlify.app/)
