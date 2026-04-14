@@ -17,7 +17,7 @@ function App() {
       asset.user.toLowerCase().includes(searchTerm.toLowerCase()) ||
       asset.serial.toLowerCase().includes(searchTerm.toLowerCase()),
   );
-  // Logic: Data se numbers nikalna
+ 
   const totalAssets = assets.length;
   const nonCompliant = assets.filter(
     (a) => a.status === "Non-Compliant",
@@ -27,7 +27,7 @@ function App() {
     100
   ).toFixed(0);
   const handleExport = () => {
-    // 1. CSV Header aur Data tayyar karo
+    
     const header = "Asset Name,Type,Status,Assigned To,Serial\n";
     const rows = filteredAssets
       .map((a) => `${a.name},${a.type},${a.status},${a.user},${a.serial}`)
@@ -35,7 +35,7 @@ function App() {
 
     const csvContent = "data:text/csv;charset=utf-8," + header + rows;
 
-    // 2. Hidden Link banao aur auto-click karke download karwao
+   
     const encodedUri = encodeURI(csvContent);
     const link = document.createElement("a");
     link.setAttribute("href", encodedUri);
@@ -45,7 +45,7 @@ function App() {
     );
     document.body.appendChild(link);
 
-    link.click(); // Ye line file download trigger karegi
+    link.click(); 
     document.body.removeChild(link);
   };
   const handleAddAsset = () => {
@@ -59,7 +59,7 @@ function App() {
       lastAudit: new Date().toISOString().split("T")[0],
     };
 
-    setAssets([newAsset, ...assets]); // Naya asset list ke top par add hoga
+    setAssets([newAsset, ...assets]); 
   };
   const handleDeleteAsset = (id) => {
     if (window.confirm("Are you sure you want to remove this asset?")) {
